@@ -1,6 +1,7 @@
 # ChangeRequest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Change request project addresses the need for efficient change management among the users. Project change requests are common, but any mismanagement can cause delays, misunderstandings. A centralized and automated change request is needed in the form of a web app. The application aims to simplify the manual change-request submission, tracking and processing. User authentication, role-based access control and customized forms meet the needs of the three major users, the applicant, the developers and the technical staff. “Change Request” prioritizes error handling and user experience. It highlights the active link indicating the page we are in and makes switching between sections easier. The project aims to revolutionize how organizations handle change requests by simplifying the process, reducing risks, and ensuring project success.
 
 ## Development server
 

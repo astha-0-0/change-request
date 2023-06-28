@@ -1,0 +1,11 @@
+.container{
+    margin:0;
+    padding: 0;
+}
+.table{
+    padding: 20px;
+    margin: 150px;
+}
+.row{
+    margin: 120px;
+}

@@ -1,0 +1,14 @@
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    margin-top: 200px;
+  }
+  
+  .welcome {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
+  

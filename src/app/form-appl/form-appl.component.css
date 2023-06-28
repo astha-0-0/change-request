@@ -1,0 +1,27 @@
+.btn{
+    margin: 30px;
+}
+
+.container{
+    padding: 50px;
+    margin-top: 150px;
+    background-color: #dbdef4;
+    
+}
+
+.row{
+    margin: 20px;
+}
+
+ 
+.error-message{
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(97, 247, 127);
+    text-align: center;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.3s ease;
+    
+  }

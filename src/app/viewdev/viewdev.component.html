@@ -1,0 +1,43 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <div class="row table-container"> 
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Define the columns -->
+            <ng-container matColumnDef="devname">
+            <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{ element.devname }}</mat-cell>
+            </ng-container>
+        
+            <ng-container matColumnDef="Date">
+            <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{ element.Date | date }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="Signature">
+                <mat-header-cell *matHeaderCellDef>Signature</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.Signature }}</mat-cell>
+                </ng-container>
+        
+            <ng-container matColumnDef="Comments">
+            <mat-header-cell *matHeaderCellDef>Comment</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{ element.Comments }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="delete">
+                <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                  <button mat-icon-button color="warn" (click)="deleteRow(element)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </mat-cell>
+              </ng-container>
+              
+        
+            <!-- Define the table header -->
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        
+            <!-- Define the table rows -->
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </div>
+</div>

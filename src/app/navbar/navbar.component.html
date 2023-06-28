@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top">
+    <div class="container-fluid d-flex justify-content-start">
+      <a [routerLink]="getrouterLink()" routerLinkActive="actives" ariaCurrentWhenActive="page" class="logo"><img src="assets/cr.png" style="width: 250px; height: 50px;" class="logo" alt="ChangeReq Image"></a>  
+      <a [routerLink]="getformLink()" routerLinkActive="active" ariaCurrentWhenActive="page" class="second">Fill New Form</a>  
+      <button class="btn btn-light" (click)="logout()">Logout</button>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<!--<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon class="white">more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" class="menu-position">
+        <button mat-menu-item class="btn btn-light" (click)="logout()">Logout</button>
+       </mat-menu>-->

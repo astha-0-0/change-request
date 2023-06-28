@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+<div class="container border-dotted">
+    <div class="row"> 
+        <p style="font: 20px bold;">PMU(NIC):-Technical Personal Advise/Feasibility/Logic/Suggested
+        </p>
+        </div>
+    
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                
+                <mat-form-field>
+                    <input matInput placeholder="Name" value="" #name [formControl]="NameControl">
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field>
+                    <mat-label>Feasibility Analysis</mat-label>
+                    <textarea matInput #analysis [formControl]="AnylControl"></textarea>
+                  </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field>
+                    <mat-label>Logic to be implemented</mat-label>
+                    <textarea matInput #logic [formControl]="logicControl"></textarea>
+                  </mat-form-field>
+            </div>
+        </div>
+    
+        <div class="col-sm-6">
+            <div class="row"> 
+                <section class="example-section">
+                  <mat-checkbox class="example-margin" [checked]="selectedCategory === 'Help Desk Category'" (change)="selectCategory('Help Desk Category')" [formControl]="catControl">Help Desk Category</mat-checkbox>
+                </section>
+              </div>
+              <div class="row"> 
+                <section class="example-section">
+                  <mat-checkbox class="example-margin" [checked]="selectedCategory === 'Programming/Development Level'" (change)="selectCategory('Programming/Development Level')" [formControl]="catControl">Programming/Development Level</mat-checkbox>
+                </section>
+              </div>
+              
+              <div class="row"> 
+                <section class="example-section col-sm-6">
+                  <mat-checkbox class="example-margin" [checked]="selectedCategory === 'Existing Module'" (change)="selectCategory('Existing Module')" [formControl]="catControl">Existing Module</mat-checkbox>
+                  <br><mat-checkbox class="example-margin" [checked]="selectedCategory === 'Data'" (change)="selectCategory('Data')" [formControl]="catControl">Data</mat-checkbox>
+                  <br><mat-checkbox class="example-margin" [checked]="selectedCategory === 'Authentication'" (change)="selectCategory('Authentication')" [formControl]="catControl">Authentication</mat-checkbox>
+                </section>
+                <section class="example-section col-sm-6">
+                  <mat-checkbox class="example-margin" [checked]="selectedCategory === 'Name'" (change)="selectCategory('Name')" [formControl]="catControl">Name</mat-checkbox>
+                  <br>
+                  <mat-checkbox class="example-margin" [checked]="selectedCategory === 'UI'" (change)="selectCategory('UI')" [formControl]="catControl">UI</mat-checkbox>
+                  <br><mat-checkbox class="example-margin" [checked]="selectedCategory === 'Business logic'" (change)="selectCategory('Business logic')" [formControl]="catControl">Business logic</mat-checkbox>
+                </section>
+              </div>
+             
+            <div class="row">
+                <mat-form-field>
+                    <mat-label>Signature with date</mat-label>
+                    <textarea matInput #sign [formControl]="signControl"></textarea>
+                  </mat-form-field>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <section class="row">
+      <mat-checkbox class="example-margin" [(ngModel)]="checkboxChecked" [formControl]="checkControl">I agree that I filled all the required correctly.</mat-checkbox>
+    </section>
+    
+    <section class="row">
+          <button class="col-sm-4 offset-4" mat-raised-button (click)="getsecond(name.value,analysis.value,logic.value,sign.value); resetFormFields()">SUBMIT</button>
+      </section>
+
+   
+
+</div>
